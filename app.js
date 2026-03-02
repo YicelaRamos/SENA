@@ -57,3 +57,4 @@ form.addEventListener('submit', (e) => {
     validate();
   }
 });
+nombre.value =nombre.value.toUpperCase();
