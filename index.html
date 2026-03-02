@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ejercicio 4 — Formulario</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="container">
+  <h1>Contacto</h1>
+  <form id="contacto" novalidate aria-describedby="ayuda">
+    <p id="ayuda">Los campos marcados con * son obligatorios.</p>
+    <label for="nombre">Nombre *</label>
+    <input id="nombre" name="nombre" required aria-required="true" minlength="3" />
+    <div id="err-nombre" class="error" aria-live="polite"></div>
+    
+    <!--Primer cambio, agregar el campo "telefono"-->
+    <label for="telefono">Telefono *</label>
+    <div id="err-telefono" class="error" aria-live="polite"></div>
+    <input type="text" id="telefono">
+
+    <label for="email">Email *</label>
+    <input id="email" name="email" type="email" required aria-required="true" />
+    <div id="err-email" class="error" aria-live="polite"></div>
+
+    <label for="mensaje">Mensaje</label>
+    <textarea id="mensaje" name="mensaje" rows="4"></textarea>
+    <!--Botón-->
+    <button id="submitBtn" type="submit">Enviar</button>
+
+
+  </form>
+</div>
+<script src="app.js"></script>
+</body>
+</html>|n
